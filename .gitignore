@@ -1,0 +1,44 @@
+﻿# Secrets - never commit
+.env
+.env.*
+*.env
+secrets.json
+credentials.json
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.pytest_cache/
+
+# Build outputs
+dist/
+build/
+_site/
+.cache/
+
+# Logs
+*.log
+
+# Temp
+tmp/
+temp/
+*.tmp
