@@ -42,3 +42,5 @@ _site/
 tmp/
 temp/
 *.tmp
+
+_notes/
