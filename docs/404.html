@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Not Found — Tarot of Modern Insanity</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --bg-dark: oklch(0.15 0.015 240);
+            --bg-card: oklch(0.92 0.02 60);
+            --text-dark: oklch(0.25 0.01 240);
+            --text-light: oklch(0.88 0.01 60);
+            --accent-gold: oklch(0.65 0.12 75);
+            --border-ornate: oklch(0.45 0.08 65);
+        }
+        
+        body {
+            font-family: 'EB Garamond', Georgia, serif;
+            background: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.7;
+            font-size: 18px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .site-header {
+            text-align: center;
+            padding: 3rem 1.5rem 2rem;
+            border-bottom: 2px solid var(--border-ornate);
+            background: linear-gradient(180deg, oklch(0.12 0.02 240) 0%, var(--bg-dark) 100%);
+        }
+        
+        .site-title {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(1.75rem, 5vw, 2.75rem);
+            font-weight: 700;
+            color: var(--accent-gold);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            text-decoration: none;
+        }
+        
+        a.site-title:hover {
+            opacity: 0.8;
+        }
+        
+        .site-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            font-style: italic;
+            opacity: 0.85;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1.5rem;
+            border-bottom: 1px solid oklch(0.25 0.02 240);
+        }
+        
+        .nav a {
+            font-family: 'Cinzel', serif;
+            font-size: 0.95rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--accent-gold);
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+        
+        .nav a:hover {
+            opacity: 0.7;
+        }
+        
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .error-card {
+            background: var(--bg-card);
+            color: var(--text-dark);
+            border-radius: 4px;
+            box-shadow: 
+                0 4px 12px rgba(0,0,0,0.4),
+                0 0 0 1px var(--border-ornate),
+                inset 0 1px 0 oklch(0.98 0.01 60);
+            padding: 3rem 2.5rem;
+            text-align: center;
+        }
+        
+        .error-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+        
+        .error-subtitle {
+            font-family: 'Cinzel', serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: oklch(0.45 0.02 240);
+            margin-bottom: 2rem;
+        }
+        
+        .error-message {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2.5rem;
+        }
+        
+        .error-actions {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .error-link {
+            font-family: 'Cinzel', serif;
+            font-size: 0.95rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--text-dark);
+            background: var(--accent-gold);
+            padding: 0.75rem 1.5rem;
+            border-radius: 3px;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+        
+        .error-link:hover {
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 600px) {
+            .error-card {
+                padding: 2.5rem 1.75rem;
+            }
+            
+            .error-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <a href="index.html" class="site-title">Tarot of Modern Insanity</a>
+        <p class="site-subtitle">Daily cards for emotional chaos, executive dysfunction, and domestic mythology</p>
+    </header>
+    
+    <nav class="nav">
+        <a href="index.html">Today</a>
+        <a href="archive.html">Archive</a>
+    </nav>
+    
+    <main class="container">
+        <div class="error-card">
+            <h1 class="error-title">404</h1>
+            <h2 class="error-subtitle">Card Not Found</h2>
+            <p class="error-message">
+                This card has not been drawn yet.<br>
+                The deck is still being shuffled.<br>
+                Try the archive, or check back tomorrow.
+            </p>
+            <div class="error-actions">
+                <a href="index.html" class="error-link">Today's Card</a>
+                <a href="archive.html" class="error-link">View Archive</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
