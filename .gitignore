@@ -44,3 +44,6 @@ temp/
 *.tmp
 
 _notes/
+
+# Local agent/editor lock files
+*.lock
