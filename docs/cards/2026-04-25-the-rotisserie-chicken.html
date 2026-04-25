@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarot of Modern Insanity</title>
-    <meta name="description" content="Daily cards for funny, painfully accurate emotional chaos. Executive dysfunction, domestic mythology, and creative weirdness.">
+    <title>The Rotisserie Chicken — Tarot of Modern Insanity</title>
+    <meta name="description" content="The Rotisserie Chicken appears when you have a small problem and you are about to solve it with a beautiful, dignified, eight step plan that nobody asked for.">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Tarot of Modern Insanity">
-    <meta property="og:description" content="Daily cards for funny, painfully accurate emotional chaos.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="cards/assets/2026-04-25-the-rotisserie-chicken.png">
+    <meta property="og:title" content="The Rotisserie Chicken">
+    <meta property="og:description" content="Not every meal is a performance. Some nights, dinner is just heat plus chicken plus the wisdom to stop.">
+    <meta property="og:image" content="assets/2026-04-25-the-rotisserie-chicken.png">
+    <meta property="og:type" content="article">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Rotisserie Chicken">
+    <meta name="twitter:description" content="Not every meal is a performance. Some nights, dinner is just heat plus chicken plus the wisdom to stop.">
+    <meta name="twitter:image" content="assets/2026-04-25-the-rotisserie-chicken.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,13 +35,13 @@
         }
         body { font-family: 'EB Garamond', Georgia, serif; background: var(--bg-dark); color: var(--text-light); line-height: 1.7; font-size: 18px; min-height: 100vh; }
         .site-header { text-align: center; padding: 3rem 1.5rem 2rem; border-bottom: 2px solid var(--border-ornate); background: linear-gradient(180deg, oklch(0.12 0.02 240) 0%, var(--bg-dark) 100%); }
-        .site-title { font-family: 'Cinzel', serif; font-size: clamp(1.75rem, 5vw, 2.75rem); font-weight: 700; color: var(--accent-gold); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .site-title { font-family: 'Cinzel', serif; font-size: clamp(1.75rem, 5vw, 2.75rem); font-weight: 700; color: var(--accent-gold); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.5rem; text-decoration: none; display: block; }
+        a.site-title:hover { opacity: 0.8; }
         .site-subtitle { font-size: 1.1rem; color: var(--text-light); font-style: italic; opacity: 0.85; }
         .nav { display: flex; justify-content: center; gap: 2rem; padding: 1.5rem; border-bottom: 1px solid oklch(0.25 0.02 240); }
         .nav a { font-family: 'Cinzel', serif; font-size: 0.95rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-gold); text-decoration: none; transition: opacity 0.2s; }
         .nav a:hover { opacity: 0.7; }
         .container { max-width: 900px; margin: 0 auto; padding: 3rem 1.5rem; }
-        .today-label { font-family: 'Cinzel', serif; font-size: 0.9rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent-gold); text-align: center; margin-bottom: 2rem; opacity: 0.9; }
         .card { background: var(--bg-card); color: var(--text-dark); border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.4), 0 0 0 1px var(--border-ornate), inset 0 1px 0 oklch(0.98 0.01 60); overflow: hidden; margin-bottom: 3rem; }
         .card-image { width: 100%; display: block; }
         .card-content { padding: 2.5rem 2rem 2rem; }
@@ -51,9 +57,6 @@
         .card-section p:last-child { margin-bottom: 0; }
         blockquote { background: oklch(0.25 0.02 240); color: var(--accent-gold); padding: 1.5rem 2rem; margin: 1.5rem 0; border-left: 4px solid var(--accent-gold); font-size: 1.15rem; font-style: italic; line-height: 1.6; }
         .quote-section blockquote { background: var(--accent-red); color: oklch(0.98 0.01 60); border-left-color: oklch(0.75 0.2 25); font-size: 1.25rem; font-weight: 500; text-align: center; padding: 2rem; }
-        .read-more { text-align: center; margin-top: 1rem; }
-        .read-more a { font-family: 'Cinzel', serif; font-size: 0.95rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--border-ornate); padding: 0.75rem 1.5rem; border-radius: 3px; display: inline-block; transition: opacity 0.2s; }
-        .read-more a:hover { opacity: 0.8; }
         .footer { text-align: center; padding: 3rem 1.5rem 2rem; border-top: 2px solid var(--border-ornate); margin-top: 4rem; font-size: 0.95rem; opacity: 0.7; }
         .footer p { margin-bottom: 0.5rem; }
         .footer a { color: var(--accent-gold); text-decoration: none; }
@@ -68,24 +71,22 @@
 </head>
 <body>
     <header class="site-header">
-        <h1 class="site-title">Tarot of Modern Insanity</h1>
+        <a href="../index.html" class="site-title">Tarot of Modern Insanity</a>
         <p class="site-subtitle">Daily cards for emotional chaos, executive dysfunction, and domestic mythology</p>
     </header>
 
     <nav class="nav">
-        <a href="index.html">Today</a>
-        <a href="archive.html">Archive</a>
+        <a href="../index.html">Today</a>
+        <a href="../archive.html">Archive</a>
     </nav>
 
     <main class="container">
-        <div class="today-label">Today's Card</div>
-
         <article class="card">
-            <img src="cards/assets/2026-04-25-the-rotisserie-chicken.png" alt="The Rotisserie Chicken" class="card-image">
+            <img src="assets/2026-04-25-the-rotisserie-chicken.png" alt="The Rotisserie Chicken" class="card-image" loading="lazy">
 
             <div class="card-content">
                 <header class="card-header">
-                    <h2 class="card-title">The Rotisserie Chicken</h2>
+                    <h1 class="card-title">The Rotisserie Chicken</h1>
                     <div class="card-meta">
                         <time class="card-date" datetime="2026-04-25">April 25, 2026</time>
                         <span class="card-category">Food and Beverage Divination</span>
@@ -93,13 +94,13 @@
                 </header>
 
                 <section class="card-section">
-                    <h3 class="section-heading">Meaning</h3>
+                    <h2 class="section-heading">Meaning</h2>
                     <p>The Rotisserie Chicken appears when you have a small problem and you are about to solve it with a beautiful, dignified, eight step plan that nobody asked for.</p>
                     <p>A real solution is sitting on a heat lamp under a plastic dome for nine dollars. It does not need a sauce. It does not need a strategy. It needs you to pick it up and walk to the register.</p>
                 </section>
 
                 <section class="card-section">
-                    <h3 class="section-heading">When this appears</h3>
+                    <h2 class="section-heading">When this appears</h2>
                     <p>You are standing in the kitchen at 6:47 PM treating dinner like a dissertation defense.</p>
                     <p>No guests.</p>
                     <p>No occasion.</p>
@@ -110,19 +111,19 @@
                 </section>
 
                 <section class="card-section">
-                    <h3 class="section-heading">The Goblin Claim</h3>
+                    <h2 class="section-heading">The Goblin Claim</h2>
                     <blockquote>"A meal must be hard or it does not count."</blockquote>
                 </section>
 
                 <section class="card-section">
-                    <h3 class="section-heading">Reality Check</h3>
+                    <h2 class="section-heading">Reality Check</h2>
                     <p>Effort is not the same as nourishment. Your body cannot read a recipe.</p>
                     <p>The chicken on the cushion is real food. It does not lose dignity by being convenient. You have not lowered your standards. You have stopped charging yourself a vanity tax for the crime of being tired.</p>
                     <p>The dishes you do not have to wash are not a moral failure. They are time you bought back.</p>
                 </section>
 
                 <section class="card-section">
-                    <h3 class="section-heading">Useful Action</h3>
+                    <h2 class="section-heading">Useful Action</h2>
                     <p>Tonight, give yourself permission to choose the boring fix and eat it on an actual plate, with no production value at all.</p>
                     <p>1. Pick up the rotisserie chicken, or its closest cousin.<br>
                     2. Add one bagged side. No washing, no chopping, no apology.<br>
@@ -132,20 +133,33 @@
                 </section>
 
                 <section class="card-section quote-section">
-                    <h3 class="section-heading">Quote</h3>
+                    <h2 class="section-heading">Quote</h2>
                     <blockquote>"Not every meal is a performance. Some nights, dinner is just heat plus chicken plus the wisdom to stop."</blockquote>
                 </section>
 
                 <section class="card-section">
-                    <h3 class="section-heading">Tiny Ritual</h3>
+                    <h2 class="section-heading">Tiny Ritual</h2>
                     <p>Stand over the chicken, place one hand on the lid like a humble priest, and quietly thank the bird for its service. Let it go. Let yourself be fed. Then one small physical reset: water, a slow exhale, socks, sunlight, or dim the kitchen lights.</p>
+                </section>
+
+                <section class="card-section">
+                    <h2 class="section-heading">Social Caption</h2>
+                    <p>The Rotisserie Chicken appears when you are about to solve a small problem with a noble eight step plan nobody asked for. A real dinner is on a heat lamp for nine dollars. Pick the boring fix. Eat. Stop narrating.</p>
+                </section>
+
+                <section class="card-section">
+                    <h2 class="section-heading">Worksheet Prompt</h2>
+                    <p>The small problem I am currently overengineering:</p>
+                    <blockquote>_______________________________</blockquote>
+                    <p>The unglamorous fix that would actually solve it tonight:</p>
+                    <blockquote>_______________________________</blockquote>
+                    <p>What I am afraid the easy answer says about me:</p>
+                    <blockquote>_______________________________</blockquote>
+                    <p>What I will let myself eat without an apology:</p>
+                    <blockquote>_____________________________</blockquote>
                 </section>
             </div>
         </article>
-
-        <div class="read-more">
-            <a href="cards/2026-04-25-the-rotisserie-chicken.html">Read full card</a>
-        </div>
     </main>
 
     <footer class="footer">
