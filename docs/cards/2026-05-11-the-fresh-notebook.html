@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarot of Modern Insanity</title>
-    <meta name="description" content="Daily cards for funny, painfully accurate emotional chaos. Executive dysfunction, domestic mythology, and creative weirdness.">
+    <title>The Fresh Notebook — Tarot of Modern Insanity</title>
+    <meta name="description" content="The Fresh Notebook appears when you have purchased a future that does not exist yet. It is the moment a $7.99 piece of cardboard convinces you that the cleaner, more focused version of you is finally about to clock in.">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Tarot of Modern Insanity">
-    <meta property="og:description" content="Daily cards for funny, painfully accurate emotional chaos.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="cards/assets/2026-05-11-the-fresh-notebook.png">
+    <meta property="og:title" content="The Fresh Notebook">
+    <meta property="og:description" content="A notebook is a promise. A sentence is a payment. The clearance shelf accepts neither.">
+    <meta property="og:image" content="assets/2026-05-11-the-fresh-notebook.png">
+    <meta property="og:type" content="article">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Fresh Notebook">
+    <meta name="twitter:description" content="A notebook is a promise. A sentence is a payment. The clearance shelf accepts neither.">
+    <meta name="twitter:image" content="assets/2026-05-11-the-fresh-notebook.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,13 +35,13 @@
         }
         body { font-family: 'EB Garamond', Georgia, serif; background: var(--bg-dark); color: var(--text-light); line-height: 1.7; font-size: 18px; min-height: 100vh; }
         .site-header { text-align: center; padding: 3rem 1.5rem 2rem; border-bottom: 2px solid var(--border-ornate); background: linear-gradient(180deg, oklch(0.12 0.02 240) 0%, var(--bg-dark) 100%); }
-        .site-title { font-family: 'Cinzel', serif; font-size: clamp(1.75rem, 5vw, 2.75rem); font-weight: 700; color: var(--accent-gold); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .site-title { font-family: 'Cinzel', serif; font-size: clamp(1.75rem, 5vw, 2.75rem); font-weight: 700; color: var(--accent-gold); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.5rem; text-decoration: none; display: block; }
+        a.site-title:hover { opacity: 0.8; }
         .site-subtitle { font-size: 1.1rem; color: var(--text-light); font-style: italic; opacity: 0.85; }
         .nav { display: flex; justify-content: center; gap: 2rem; padding: 1.5rem; border-bottom: 1px solid oklch(0.25 0.02 240); }
         .nav a { font-family: 'Cinzel', serif; font-size: 0.95rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-gold); text-decoration: none; transition: opacity 0.2s; }
         .nav a:hover { opacity: 0.7; }
         .container { max-width: 900px; margin: 0 auto; padding: 3rem 1.5rem; }
-        .today-label { font-family: 'Cinzel', serif; font-size: 0.9rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent-gold); text-align: center; margin-bottom: 2rem; opacity: 0.9; }
         .card { background: var(--bg-card); color: var(--text-dark); border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.4), 0 0 0 1px var(--border-ornate), inset 0 1px 0 oklch(0.98 0.01 60); overflow: hidden; margin-bottom: 3rem; }
         .card-image { width: 100%; display: block; }
         .card-content { padding: 2.5rem 2rem 2rem; }
@@ -51,9 +57,6 @@
         .card-section p:last-child { margin-bottom: 0; }
         blockquote { background: oklch(0.25 0.02 240); color: var(--accent-gold); padding: 1.5rem 2rem; margin: 1.5rem 0; border-left: 4px solid var(--accent-gold); font-size: 1.15rem; font-style: italic; line-height: 1.6; }
         .quote-section blockquote { background: var(--accent-red); color: oklch(0.98 0.01 60); border-left-color: oklch(0.75 0.2 25); font-size: 1.25rem; font-weight: 500; text-align: center; padding: 2rem; }
-        .read-more { text-align: center; margin-top: 1rem; }
-        .read-more a { font-family: 'Cinzel', serif; font-size: 0.95rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--border-ornate); padding: 0.75rem 1.5rem; border-radius: 3px; display: inline-block; transition: opacity 0.2s; }
-        .read-more a:hover { opacity: 0.8; }
         .footer { text-align: center; padding: 3rem 1.5rem 2rem; border-top: 2px solid var(--border-ornate); margin-top: 4rem; font-size: 0.95rem; opacity: 0.7; }
         .footer p { margin-bottom: 0.5rem; }
         .footer a { color: var(--accent-gold); text-decoration: none; }
@@ -68,24 +71,22 @@
 </head>
 <body>
     <header class="site-header">
-        <h1 class="site-title">Tarot of Modern Insanity</h1>
+        <a href="../index.html" class="site-title">Tarot of Modern Insanity</a>
         <p class="site-subtitle">Daily cards for emotional chaos, executive dysfunction, and domestic mythology</p>
     </header>
 
     <nav class="nav">
-        <a href="index.html">Today</a>
-        <a href="archive.html">Archive</a>
+        <a href="../index.html">Today</a>
+        <a href="../archive.html">Archive</a>
     </nav>
 
     <main class="container">
-        <div class="today-label">Today's Card</div>
-
         <article class="card">
-            <img src="cards/assets/2026-05-11-the-fresh-notebook.png" alt="The Fresh Notebook" class="card-image">
+            <img src="assets/2026-05-11-the-fresh-notebook.png" alt="The Fresh Notebook" class="card-image" loading="lazy">
 
             <div class="card-content">
                 <header class="card-header">
-                    <h2 class="card-title">The Fresh Notebook</h2>
+                    <h1 class="card-title">The Fresh Notebook</h1>
                     <div class="card-meta">
                         <time class="card-date" datetime="2026-05-11">May 11, 2026</time>
                         <span class="card-category">Career Cosplay</span>
@@ -93,13 +94,13 @@
                 </header>
 
                 <section class="card-section">
-                    <h3 class="section-heading">Meaning</h3>
+                    <h2 class="section-heading">Meaning</h2>
                     <p>The Fresh Notebook appears when you have purchased a future that does not exist yet. It is the moment a $7.99 piece of cardboard convinces you that the cleaner, more focused version of you is finally about to clock in.</p>
                     <p>That version is not in the notebook. The notebook is the diving board. The pool is the part where you actually write the first line.</p>
                 </section>
 
                 <section class="card-section">
-                    <h3 class="section-heading">When this appears</h3>
+                    <h2 class="section-heading">When this appears</h2>
                     <p>You are standing on the stationery aisle, slightly elated.</p>
                     <p>No project started.</p>
                     <p>No deadline.</p>
@@ -110,18 +111,18 @@
                 </section>
 
                 <section class="card-section">
-                    <h3 class="section-heading">The Goblin Claim</h3>
+                    <h2 class="section-heading">The Goblin Claim</h2>
                     <blockquote>"If the notebook is right, the life will follow."</blockquote>
                 </section>
 
                 <section class="card-section">
-                    <h3 class="section-heading">Reality Check</h3>
+                    <h2 class="section-heading">Reality Check</h2>
                     <p>A notebook is not a life change. A notebook is a small paper box that holds proof you tried.</p>
                     <p>The reason the old notebook is unfinished is not because it was the wrong color or the wrong brand. It is because writing in it requires sitting down and being a person, which a new cover cannot do for you.</p>
                 </section>
 
                 <section class="card-section">
-                    <h3 class="section-heading">Useful Action</h3>
+                    <h2 class="section-heading">Useful Action</h2>
                     <p>Open the notebook you already own. The slightly disappointing one. Then:</p>
                     <p>1. Write today's date on the first blank page.<br>
                     2. Write one sentence. Any sentence. A grocery list counts.<br>
@@ -131,20 +132,32 @@
                 </section>
 
                 <section class="card-section quote-section">
-                    <h3 class="section-heading">Quote</h3>
+                    <h2 class="section-heading">Quote</h2>
                     <blockquote>"A notebook is a promise. A sentence is a payment. The clearance shelf accepts neither."</blockquote>
                 </section>
 
                 <section class="card-section">
-                    <h3 class="section-heading">Tiny Ritual</h3>
+                    <h2 class="section-heading">Tiny Ritual</h2>
                     <p>Hold the notebook in both hands and say out loud: "I see you, paper rectangle. You are not my savior." Then write one boring sentence inside it. Reset with something small: water, the pen already on the counter, socks, sunlight, or briefly stepping outside like a person who actually owns this notebook.</p>
+                </section>
+
+                <section class="card-section">
+                    <h2 class="section-heading">Social Caption</h2>
+                    <p>The Fresh Notebook appears when you buy a new life for $7.99 and call it preparation. The notebook is not the project. Open the one you already own and write one sentence in it today. Any sentence. A grocery list counts.</p>
+                </section>
+
+                <section class="card-section">
+                    <h2 class="section-heading">Worksheet Prompt</h2>
+                    <p>The notebook I just bought was supposed to finally make me into:</p>
+                    <blockquote>_______________________________</blockquote>
+                    <p>The project actually waiting for me is:</p>
+                    <blockquote>_______________________________</blockquote>
+                    <p>One sentence I could write today in any notebook already in the house:</p>
+                    <blockquote>_______________________________</blockquote>
+                    <p>Official ruli</p>
                 </section>
             </div>
         </article>
-
-        <div class="read-more">
-            <a href="cards/2026-05-11-the-fresh-notebook.html">Read full card</a>
-        </div>
     </main>
 
     <footer class="footer">
