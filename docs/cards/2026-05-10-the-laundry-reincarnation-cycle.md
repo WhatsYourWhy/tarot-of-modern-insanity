@@ -89,4 +89,10 @@ Where each of those five actually lives in this house:
 
 > _______________________________
 
+<<<<<<< Updated upstream
 Official 
+=======
+Official ruling:
+
+> The clothes are not the problem. The problem is the open loop in your head. Close five loops today. Leave the rest of the basket for tomorrow.
+>>>>>>> Stashed changes
