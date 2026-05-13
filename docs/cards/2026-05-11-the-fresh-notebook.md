@@ -83,4 +83,10 @@ One sentence I could write today in any notebook already in the house:
 
 > _______________________________
 
+<<<<<<< Updated upstream
 Official ruli
+=======
+Official ruling:
+
+> A blank page is not a fresh start. A first sentence is a fresh start. Everything else is a paper rectangle.
+>>>>>>> Stashed changes
