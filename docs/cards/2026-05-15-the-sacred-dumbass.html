@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarot of Modern Insanity</title>
-    <meta name="description" content="Daily cards for funny, painfully accurate emotional chaos. Executive dysfunction, domestic mythology, and creative weirdness.">
+    <title>The Sacred Dumbass — Tarot of Modern Insanity</title>
+    <meta name="description" content="The Sacred Dumbass appears when you have been waiting to feel ready for a thing that does not give out readiness as a prize. The thing you want only hands out competence as a reward for attempts.">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Tarot of Modern Insanity">
-    <meta property="og:description" content="Daily cards for funny, painfully accurate emotional chaos.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="cards/assets/2026-05-15-the-sacred-dumbass.png">
+    <meta property="og:title" content="The Sacred Dumbass">
+    <meta property="og:description" content="The gods do not bless the prepared. They bless the people who started early and looked a little stupid doing it.">
+    <meta property="og:image" content="assets/2026-05-15-the-sacred-dumbass.png">
+    <meta property="og:type" content="article">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Sacred Dumbass">
+    <meta name="twitter:description" content="The gods do not bless the prepared. They bless the people who started early and looked a little stupid doing it.">
+    <meta name="twitter:image" content="assets/2026-05-15-the-sacred-dumbass.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,13 +35,13 @@
         }
         body { font-family: 'EB Garamond', Georgia, serif; background: var(--bg-dark); color: var(--text-light); line-height: 1.7; font-size: 18px; min-height: 100vh; }
         .site-header { text-align: center; padding: 3rem 1.5rem 2rem; border-bottom: 2px solid var(--border-ornate); background: linear-gradient(180deg, oklch(0.12 0.02 240) 0%, var(--bg-dark) 100%); }
-        .site-title { font-family: 'Cinzel', serif; font-size: clamp(1.75rem, 5vw, 2.75rem); font-weight: 700; color: var(--accent-gold); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .site-title { font-family: 'Cinzel', serif; font-size: clamp(1.75rem, 5vw, 2.75rem); font-weight: 700; color: var(--accent-gold); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.5rem; text-decoration: none; display: block; }
+        a.site-title:hover { opacity: 0.8; }
         .site-subtitle { font-size: 1.1rem; color: var(--text-light); font-style: italic; opacity: 0.85; }
         .nav { display: flex; justify-content: center; gap: 2rem; padding: 1.5rem; border-bottom: 1px solid oklch(0.25 0.02 240); }
         .nav a { font-family: 'Cinzel', serif; font-size: 0.95rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-gold); text-decoration: none; transition: opacity 0.2s; }
         .nav a:hover { opacity: 0.7; }
         .container { max-width: 900px; margin: 0 auto; padding: 3rem 1.5rem; }
-        .today-label { font-family: 'Cinzel', serif; font-size: 0.9rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent-gold); text-align: center; margin-bottom: 2rem; opacity: 0.9; }
         .card { background: var(--bg-card); color: var(--text-dark); border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.4), 0 0 0 1px var(--border-ornate), inset 0 1px 0 oklch(0.98 0.01 60); overflow: hidden; margin-bottom: 3rem; }
         .card-image { width: 100%; display: block; }
         .card-content { padding: 2.5rem 2rem 2rem; }
@@ -51,9 +57,6 @@
         .card-section p:last-child { margin-bottom: 0; }
         blockquote { background: oklch(0.25 0.02 240); color: var(--accent-gold); padding: 1.5rem 2rem; margin: 1.5rem 0; border-left: 4px solid var(--accent-gold); font-size: 1.15rem; font-style: italic; line-height: 1.6; }
         .quote-section blockquote { background: var(--accent-red); color: oklch(0.98 0.01 60); border-left-color: oklch(0.75 0.2 25); font-size: 1.25rem; font-weight: 500; text-align: center; padding: 2rem; }
-        .read-more { text-align: center; margin-top: 1rem; }
-        .read-more a { font-family: 'Cinzel', serif; font-size: 0.95rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--border-ornate); padding: 0.75rem 1.5rem; border-radius: 3px; display: inline-block; transition: opacity 0.2s; }
-        .read-more a:hover { opacity: 0.8; }
         .footer { text-align: center; padding: 3rem 1.5rem 2rem; border-top: 2px solid var(--border-ornate); margin-top: 4rem; font-size: 0.95rem; opacity: 0.7; }
         .footer p { margin-bottom: 0.5rem; }
         .footer a { color: var(--accent-gold); text-decoration: none; }
@@ -68,24 +71,22 @@
 </head>
 <body>
     <header class="site-header">
-        <h1 class="site-title">Tarot of Modern Insanity</h1>
+        <a href="../index.html" class="site-title">Tarot of Modern Insanity</a>
         <p class="site-subtitle">Daily cards for emotional chaos, executive dysfunction, and domestic mythology</p>
     </header>
 
     <nav class="nav">
-        <a href="index.html">Today</a>
-        <a href="archive.html">Archive</a>
+        <a href="../index.html">Today</a>
+        <a href="../archive.html">Archive</a>
     </nav>
 
     <main class="container">
-        <div class="today-label">Today's Card</div>
-
         <article class="card">
-            <img src="cards/assets/2026-05-15-the-sacred-dumbass.png" alt="The Sacred Dumbass" class="card-image">
+            <img src="assets/2026-05-15-the-sacred-dumbass.png" alt="The Sacred Dumbass" class="card-image" loading="lazy">
 
             <div class="card-content">
                 <header class="card-header">
-                    <h2 class="card-title">The Sacred Dumbass</h2>
+                    <h1 class="card-title">The Sacred Dumbass</h1>
                     <div class="card-meta">
                         <time class="card-date" datetime="2026-05-15">May 15, 2026</time>
                         <span class="card-category">Hero Shelf</span>
@@ -93,13 +94,13 @@
                 </header>
 
                 <section class="card-section">
-                    <h3 class="section-heading">Meaning</h3>
+                    <h2 class="section-heading">Meaning</h2>
                     <p>The Sacred Dumbass appears when you have been waiting to feel ready for a thing that does not give out readiness as a prize. The thing you want only hands out competence as a reward for attempts.</p>
                     <p>So you stand at the edge of trying, polishing your fear, while the actual skill is being earned by people who already started and looked deeply foolish doing it.</p>
                 </section>
 
                 <section class="card-section">
-                    <h3 class="section-heading">When this appears</h3>
+                    <h2 class="section-heading">When this appears</h2>
                     <p>You have read the article.</p>
                     <p>You have watched the video.</p>
                     <p>You have bought the supplies.</p>
@@ -110,19 +111,19 @@
                 </section>
 
                 <section class="card-section">
-                    <h3 class="section-heading">The Goblin Claim</h3>
+                    <h2 class="section-heading">The Goblin Claim</h2>
                     <blockquote>"You may begin once you are good enough to never look bad."</blockquote>
                 </section>
 
                 <section class="card-section">
-                    <h3 class="section-heading">Reality Check</h3>
+                    <h2 class="section-heading">Reality Check</h2>
                     <p>Competence does not show up before the attempt. It is the residue the attempt leaves behind.</p>
                     <p>Looking foolish is not the price of trying. It is the receipt.</p>
                     <p>You are not waiting to be ready. You are waiting to skip the part of the road where you fall off the bike. That part is the road.</p>
                 </section>
 
                 <section class="card-section">
-                    <h3 class="section-heading">Useful Action</h3>
+                    <h2 class="section-heading">Useful Action</h2>
                     <p>Do the thing badly today, on purpose. Lower the stakes until the stakes can no longer protect you from starting.</p>
                     <p>1. Pick one tiny version of the thing you have been avoiding.<br>
                     2. Set a timer for ten minutes.<br>
@@ -132,22 +133,37 @@
                 </section>
 
                 <section class="card-section quote-section">
-                    <h3 class="section-heading">Quote</h3>
+                    <h2 class="section-heading">Quote</h2>
                     <blockquote>"The gods do not bless the prepared. They bless the people who started early and looked a little stupid doing it."</blockquote>
                 </section>
 
                 <section class="card-section">
-                    <h3 class="section-heading">Tiny Ritual</h3>
+                    <h2 class="section-heading">Tiny Ritual</h2>
                     <p>Stand up. Hold your worst tool. Say, out loud, with mild reverence:</p>
                     <blockquote>"I am the Sacred Dumbass and I am here to begin."</blockquote>
                     <p>Then do one small physical reset: water, fresh socks, a short walk, sunlight on your face, or a deep breath out the door.</p>
                 </section>
+
+                <section class="card-section">
+                    <h2 class="section-heading">Social Caption</h2>
+                    <p>The Sacred Dumbass appears when you keep waiting to feel ready for something that only hands out readiness after you try. Competence is the residue of attempts, not the entry fee. Try it badly today, on purpose, before the fear gets organized.</p>
+                </section>
+
+                <section class="card-section">
+                    <h2 class="section-heading">Worksheet Prompt</h2>
+                    <p>The thing I have been waiting to feel ready for:</p>
+                    <blockquote>_______________________________</blockquote>
+                    <p>The smallest, ugliest version of it I could start today:</p>
+                    <blockquote>_______________________________</blockquote>
+                    <p>What I am afraid people will see if I begin before I am good:</p>
+                    <blockquote>_______________________________</blockquote>
+                    <p>The first ten minutes I will spend doing it badly:</p>
+                    <blockquote>_______________________________</blockquote>
+                    <p>Official ruling:</p>
+                    <blockquote>Readiness is not a permission slip. You are allowed to begin badly, on purpose, in the actual world.</blockquote>
+                </section>
             </div>
         </article>
-
-        <div class="read-more">
-            <a href="cards/2026-05-15-the-sacred-dumbass.html">Read full card</a>
-        </div>
     </main>
 
     <footer class="footer">
