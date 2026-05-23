@@ -88,4 +88,14 @@ The smallest next step (one call, one tap, one shop name written down):
 
 > _______________________________
 
+<<<<<<< Updated upstream
 What I will say to the person on the other end of th
+=======
+What I will say to the person on the other end of the phone:
+
+> _______________________________
+
+Official ruling:
+
+> The light is allowed to be on. It is not allowed to be ignored. Make the call before the rain.
+>>>>>>> Stashed changes

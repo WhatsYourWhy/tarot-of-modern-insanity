@@ -95,4 +95,8 @@ The ten minute window I will use to start it:
 
 Official ruling:
 
+<<<<<<< Updated upstream
 > You are not failing. You
+=======
+> You are not failing. You are scaled wrong for the problem. The list is the bridge. Walk.
+>>>>>>> Stashed changes

@@ -93,4 +93,10 @@ What I will do with the next ten minutes instead:
 
 > _______________________________
 
+<<<<<<< Updated upstream
 Offic
+=======
+Official ruling:
+
+> The minotaur is fed and the labyrinth is open every day. You do not have to attend, and your absence will not change the outcome.
+>>>>>>> Stashed changes
