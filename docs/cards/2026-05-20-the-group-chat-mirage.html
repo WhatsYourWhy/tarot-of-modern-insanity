@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarot of Modern Insanity</title>
-    <meta name="description" content="Daily cards for funny, painfully accurate emotional chaos. Executive dysfunction, domestic mythology, and creative weirdness.">
+    <title>The Group Chat Mirage — Tarot of Modern Insanity</title>
+    <meta name="description" content="The Group Chat Mirage appears when six adults agree that yes, absolutely, we should get dinner, and then the chat goes silent for eleven days.">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Tarot of Modern Insanity">
-    <meta property="og:description" content="Daily cards for funny, painfully accurate emotional chaos.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="cards/assets/2026-05-22-the-one-person-who-picks-a-date.png">
+    <meta property="og:title" content="The Group Chat Mirage">
+    <meta property="og:description" content="A group chat is a feeling. A plan is a date. The dinner needs a verb, not seven hearts.">
+    <meta property="og:image" content="assets/2026-05-20-the-group-chat-mirage.png">
+    <meta property="og:type" content="article">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Group Chat Mirage">
+    <meta name="twitter:description" content="A group chat is a feeling. A plan is a date. The dinner needs a verb, not seven hearts.">
+    <meta name="twitter:image" content="assets/2026-05-20-the-group-chat-mirage.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,13 +35,13 @@
         }
         body { font-family: 'EB Garamond', Georgia, serif; background: var(--bg-dark); color: var(--text-light); line-height: 1.7; font-size: 18px; min-height: 100vh; }
         .site-header { text-align: center; padding: 3rem 1.5rem 2rem; border-bottom: 2px solid var(--border-ornate); background: linear-gradient(180deg, oklch(0.12 0.02 240) 0%, var(--bg-dark) 100%); }
-        .site-title { font-family: 'Cinzel', serif; font-size: clamp(1.75rem, 5vw, 2.75rem); font-weight: 700; color: var(--accent-gold); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .site-title { font-family: 'Cinzel', serif; font-size: clamp(1.75rem, 5vw, 2.75rem); font-weight: 700; color: var(--accent-gold); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.5rem; text-decoration: none; display: block; }
+        a.site-title:hover { opacity: 0.8; }
         .site-subtitle { font-size: 1.1rem; color: var(--text-light); font-style: italic; opacity: 0.85; }
         .nav { display: flex; justify-content: center; gap: 2rem; padding: 1.5rem; border-bottom: 1px solid oklch(0.25 0.02 240); }
         .nav a { font-family: 'Cinzel', serif; font-size: 0.95rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-gold); text-decoration: none; transition: opacity 0.2s; }
         .nav a:hover { opacity: 0.7; }
         .container { max-width: 900px; margin: 0 auto; padding: 3rem 1.5rem; }
-        .today-label { font-family: 'Cinzel', serif; font-size: 0.9rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent-gold); text-align: center; margin-bottom: 2rem; opacity: 0.9; }
         .card { background: var(--bg-card); color: var(--text-dark); border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.4), 0 0 0 1px var(--border-ornate), inset 0 1px 0 oklch(0.98 0.01 60); overflow: hidden; margin-bottom: 3rem; }
         .card-image { width: 100%; display: block; }
         .card-content { padding: 2.5rem 2rem 2rem; }
@@ -51,9 +57,6 @@
         .card-section p:last-child { margin-bottom: 0; }
         blockquote { background: oklch(0.25 0.02 240); color: var(--accent-gold); padding: 1.5rem 2rem; margin: 1.5rem 0; border-left: 4px solid var(--accent-gold); font-size: 1.15rem; font-style: italic; line-height: 1.6; }
         .quote-section blockquote { background: var(--accent-red); color: oklch(0.98 0.01 60); border-left-color: oklch(0.75 0.2 25); font-size: 1.25rem; font-weight: 500; text-align: center; padding: 2rem; }
-        .read-more { text-align: center; margin-top: 1rem; }
-        .read-more a { font-family: 'Cinzel', serif; font-size: 0.95rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--border-ornate); padding: 0.75rem 1.5rem; border-radius: 3px; display: inline-block; transition: opacity 0.2s; }
-        .read-more a:hover { opacity: 0.8; }
         .footer { text-align: center; padding: 3rem 1.5rem 2rem; border-top: 2px solid var(--border-ornate); margin-top: 4rem; font-size: 0.95rem; opacity: 0.7; }
         .footer p { margin-bottom: 0.5rem; }
         .footer a { color: var(--accent-gold); text-decoration: none; }
@@ -68,84 +71,95 @@
 </head>
 <body>
     <header class="site-header">
-        <h1 class="site-title">Tarot of Modern Insanity</h1>
+        <a href="../index.html" class="site-title">Tarot of Modern Insanity</a>
         <p class="site-subtitle">Daily cards for emotional chaos, executive dysfunction, and domestic mythology</p>
     </header>
 
     <nav class="nav">
-        <a href="index.html">Today</a>
-        <a href="archive.html">Archive</a>
+        <a href="../index.html">Today</a>
+        <a href="../archive.html">Archive</a>
     </nav>
 
     <main class="container">
-        <div class="today-label">Today's Card</div>
-
         <article class="card">
-            <img src="cards/assets/2026-05-22-the-one-person-who-picks-a-date.png" alt="The One Person Who Picks a Date" class="card-image">
+            <img src="assets/2026-05-20-the-group-chat-mirage.png" alt="The Group Chat Mirage" class="card-image" loading="lazy">
 
             <div class="card-content">
                 <header class="card-header">
-                    <h2 class="card-title">The One Person Who Picks a Date</h2>
+                    <h1 class="card-title">The Group Chat Mirage</h1>
                     <div class="card-meta">
-                        <time class="card-date" datetime="2026-05-22">May 22, 2026</time>
+                        <time class="card-date" datetime="2026-05-20">May 20, 2026</time>
                         <span class="card-category">Group Chat Theology</span>
                     </div>
                 </header>
 
                 <section class="card-section">
-                    <h3 class="section-heading">Meaning</h3>
-                    <p>The One Person Who Picks a Date appears when a friend group has been "soon-ing" for a month and the air finally needs a verb.</p>
-                    <p>There is exactly one saint per group thread, and it is whoever finally types Thursday the 14th, 7 PM, my place. They were not chosen. They got tired of the fog and started a kitchen instead.</p>
+                    <h2 class="section-heading">Meaning</h2>
+                    <p>The Group Chat Mirage appears when six adults agree that yes, absolutely, we should get dinner, and then the chat goes silent for eleven days.</p>
+                    <p>It is not a failure of love. It is the natural endpoint of every group thread with more than three people. The intention is real. The Doodle poll is real. The dinner is a unicorn, and unicorns require one person to print a saddle.</p>
                 </section>
 
                 <section class="card-section">
-                    <h3 class="section-heading">When this appears</h3>
-                    <p>A "we should totally" has been hovering for ten days.</p>
-                    <p>Nobody has booked the babysitter.</p>
-                    <p>Nobody has named the restaurant.</p>
-                    <p>Three calendar emojis. Two praying-hands. One sweating clock.</p>
-                    <p>You feel the small civic itch.</p>
-                    <p>You already know you are going to be the one.</p>
-                    <blockquote>"Fine. Saint duty. Here I go."</blockquote>
+                    <h2 class="section-heading">When this appears</h2>
+                    <p>Someone says, "we should totally do this."</p>
+                    <p>Three people heart-react.</p>
+                    <p>Two people send the praying-hands.</p>
+                    <p>One person sends a calendar emoji, sweating slightly.</p>
+                    <p>Nobody picks a date.</p>
+                    <p>The thread enters a respectful, well-loved coma.</p>
+                    <p>Eleven days pass. Somebody types "lol" and goes quiet again.</p>
+                    <blockquote>"Soon. For sure. 100 percent. Soon."</blockquote>
                 </section>
 
                 <section class="card-section">
-                    <h3 class="section-heading">The Goblin Claim</h3>
-                    <blockquote>"If I pick the date, I am the bossy one."</blockquote>
+                    <h2 class="section-heading">The Goblin Claim</h2>
+                    <blockquote>"If we mean it enough, the dinner happens by itself."</blockquote>
                 </section>
 
                 <section class="card-section">
-                    <h3 class="section-heading">Reality Check</h3>
-                    <p>Picking a date is not bossy. It is mercy.</p>
-                    <p>Everyone in the thread is silently waiting to be told what to do, because deciding feels like exposure and following feels like relief. The saint is not in charge of the friendship. The saint is the person who decided fog is exhausting and pulled out one sturdy chair.</p>
-                    <p>Be that chair.</p>
+                    <h2 class="section-heading">Reality Check</h2>
+                    <p>A group chat is not a plan. A group chat is a feeling shared briefly by adults who all have other tabs open.</p>
+                    <p>The plan is a different organism. The plan needs one person to be a tiny mid-level project manager for ninety seconds. That person almost never volunteers, because volunteering feels weirdly bossy, but the truth is everyone is silently begging for that person.</p>
+                    <p>Be that person. Once.</p>
                 </section>
 
                 <section class="card-section">
-                    <h3 class="section-heading">Useful Action</h3>
-                    <p>Pick one specific date and time. Send it as a statement. Then close the app and let the group land.</p>
-                    <p>1. Open the chat that has been hovering.<br>
-                    2. Type one line: a real date, a real time, a real place.<br>
-                    3. Send. Do not soften it. Do not add "if that works for everyone."</p>
+                    <h2 class="section-heading">Useful Action</h2>
+                    <p>Pick a real date. Send it as a statement, not a question. The group needs a verb.</p>
+                    <p>1. Open the chat.<br>
+                    2. Type: "Thursday the 30th, 7 PM, my place. Bring something or do not. RSVP for headcount."<br>
+                    3. Hit send before you can soften it.</p>
                     <p>Suggested phrase:</p>
-                    <blockquote>"Saddle's printed. Thursday. Be there."</blockquote>
+                    <blockquote>"I am the saint with the saddle today."</blockquote>
                 </section>
 
                 <section class="card-section quote-section">
-                    <h3 class="section-heading">Quote</h3>
-                    <blockquote>"Group chats run on hope. Plans run on one person who got tired of hoping."</blockquote>
+                    <h2 class="section-heading">Quote</h2>
+                    <blockquote>"A group chat is a feeling. A plan is a date. The dinner needs a verb, not seven hearts."</blockquote>
                 </section>
 
                 <section class="card-section">
-                    <h3 class="section-heading">Tiny Ritual</h3>
-                    <p>Open the dormant thread. Send one date. One time. One place. Do not RSVP-soften it with "no pressure." Then put the phone face down and walk away from the chat like you just lit a candle in a quiet church. Water, snack, socks, sunlight.</p>
+                    <h2 class="section-heading">Tiny Ritual</h2>
+                    <p>Open the most dormant group chat you love. Send one specific date and time. Do not apologize for being the one who said it. Then close the app and let the chat metabolize. Water, snack, socks, sunlight, or putting on a podcast.</p>
+                </section>
+
+                <section class="card-section">
+                    <h2 class="section-heading">Social Caption</h2>
+                    <p>The Group Chat Mirage appears when six adults agree we should totally do this, then the thread goes silent for eleven days. The chat is the feeling. The plan is the date. Be the saint with the saddle. The dinner needs a verb.</p>
+                </section>
+
+                <section class="card-section">
+                    <h2 class="section-heading">Worksheet Prompt</h2>
+                    <p>The group chat I have been "soon-ing" the longest:</p>
+                    <blockquote>_______________________________</blockquote>
+                    <p>The actual date and time I could pick that would make this real:</p>
+                    <blockquote>_______________________________</blockquote>
+                    <p>The version of me that does not want to look bossy by picking a date is afraid of:</p>
+                    <blockquote>_______________________________</blockquote>
+                    <p>What I would like the dinner to feel like once it actually happens:</p>
                 </section>
             </div>
         </article>
-
-        <div class="read-more">
-            <a href="cards/2026-05-22-the-one-person-who-picks-a-date.html">Read full card</a>
-        </div>
     </main>
 
     <footer class="footer">
