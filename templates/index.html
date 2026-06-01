@@ -10,7 +10,7 @@
     <meta property="og:title" content="Tarot of Modern Insanity">
     <meta property="og:description" content="Daily cards for funny, painfully accurate emotional chaos.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="cards/assets/2026-05-30-the-notification-triangle.png">
+    <meta property="og:image" content="{{IMAGE_PATH}}">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -81,70 +81,23 @@
         <div class="today-label">Today's Card</div>
 
         <article class="card">
-            <img src="cards/assets/2026-05-30-the-notification-triangle.png" alt="The Notification Triangle" class="card-image">
+            <img src="{{IMAGE_PATH}}" alt="{{TITLE}}" class="card-image">
 
             <div class="card-content">
                 <header class="card-header">
-                    <h2 class="card-title">The Notification Triangle</h2>
+                    <h2 class="card-title">{{TITLE}}</h2>
                     <div class="card-meta">
-                        <time class="card-date" datetime="2026-05-30">May 30, 2026</time>
-                        <span class="card-category">Attention Feudalism</span>
+                        <time class="card-date" datetime="{{DATE}}">{{DATE_DISPLAY}}</time>
+                        <span class="card-category">{{CATEGORY}}</span>
                     </div>
                 </header>
 
-                <section class="card-section">
-                    <h3 class="section-heading">Meaning</h3>
-                    <p>The Notification Triangle appears when two people who chose each other find themselves seated on the same couch, in the same lamplight, with a small glowing third party between them, holding all the floor.</p>
-                    <p>The triangle is geometrically stable because the phone never gets tired, never gets bored, never asks for a snack. It has the energy of a houseguest who pays no rent and refuses to leave.</p>
-                </section>
-
-                <section class="card-section">
-                    <h3 class="section-heading">When this appears</h3>
-                    <p>You start a sentence.</p>
-                    <p>The phone hums in someone's lap.</p>
-                    <p>The sentence pauses politely.</p>
-                    <p>A small smug glow flickers between you.</p>
-                    <p>Someone says "sorry, what was that."</p>
-                    <p>Nobody can remember what.</p>
-                    <p>The couch grows half a foot wider.</p>
-                    <blockquote>"Wait, hold on, this is just one quick thing."</blockquote>
-                </section>
-
-                <section class="card-section">
-                    <h3 class="section-heading">The Goblin Claim</h3>
-                    <blockquote>"The third party is more interesting than the second one."</blockquote>
-                </section>
-
-                <section class="card-section">
-                    <h3 class="section-heading">Reality Check</h3>
-                    <p>The phone has no skin in this couch. It does not know either of your names. It is, however, professionally designed by a team of strangers to win every small contest for your eyeballs.</p>
-                    <p>That is not a moral failing on your part. That is the contest being uneven. You can rig it back. The room will hold.</p>
-                </section>
-
-                <section class="card-section">
-                    <h3 class="section-heading">Useful Action</h3>
-                    <p>Pick ten minutes tonight where the third party leaves the room. Not the relationship. The room.</p>
-                    <p>1. Set a timer for ten minutes.<br>
-                    2. Put both phones face-down in the kitchen or in a drawer.<br>
-                    3. Sit on the couch. Talk about nothing. Notice the room.</p>
-                    <p>Suggested phrase:</p>
-                    <blockquote>"Let's put the glowing one in the hallway for a bit."</blockquote>
-                </section>
-
-                <section class="card-section quote-section">
-                    <h3 class="section-heading">Quote</h3>
-                    <blockquote>"A phone never gets tired of you, which is exactly why it cannot love you back."</blockquote>
-                </section>
-
-                <section class="card-section">
-                    <h3 class="section-heading">Tiny Ritual</h3>
-                    <p>Find the spot on the couch where the phone usually lives. Pat it twice. Move the phone three rooms away, gently, like relocating a small bureaucrat. Then come back and rejoin the couch. Water, socks, lamp on, blanket, eye contact.</p>
-                </section>
+{{SECTIONS}}
             </div>
         </article>
 
         <div class="read-more">
-            <a href="cards/2026-05-30-the-notification-triangle.html">Read full card</a>
+            <a href="cards/{{DATE}}-{{SLUG}}.html">Read full card</a>
         </div>
     </main>
 
